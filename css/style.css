@@ -16,11 +16,11 @@ ul{
 
 /* * HEADER * */
 header{
-    height: 80px;
+    height: 70px;
 }
 /* logo  */
 #logo-container{
-    width: 80px;
+    width: 70px;
 }
 /* searchbar  */
 #searchbar{
@@ -48,14 +48,18 @@ header #navbar .fa-bell{
 }
 /* ** * MAIN * ** */
 main{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
 }
 
 /* aside  */
 aside{
     background-color: rgb(6,30,52);
-    width: 80px;
+    width: 70px;
     height: 100%;
+}
+
+aside ul{
+    padding-left: 1.5rem;
 }
 
 aside ul i{
@@ -65,12 +69,22 @@ aside ul i{
 
 /* * main content *  */
 #main-content{
-    width: calc(100vw - 80px);
+    width: calc(100vw - 70px);
     height: 100%;
 }
 
 #jumbo{
-    height: 280px;
+    height: 250px;
+}
+
+#jumbo .rounded-pill{
+    background-color: rgba(0,0,0,0.2);
+    padding: .25rem .5rem;
+    font-size: .9rem;
+}
+
+#jumbo .fa-plus{
+    padding: .25rem .7rem
 }
 
 
@@ -86,7 +100,7 @@ aside ul i{
 @media screen and (min-width: 768px){
     /* main  */
     #jumbo{
-        height: 160px;
+        height: 150px;
     }
 }
 
@@ -94,16 +108,16 @@ aside ul i{
 @media screen and (min-width: 992px){
     /* header  */
     #logo-container{
-        width: 160px;
+        width: 150px;
     }
 
     /* main  */
     #jumbo{
-        height: 140px;
+        height: 125px;
     }
 
     /* aisde  */
     aside{
-        width: 160px;
+        width: 150px;
     }
 }
