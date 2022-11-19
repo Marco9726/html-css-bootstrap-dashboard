@@ -67,26 +67,43 @@ aside ul i{
 #main-content{
     width: calc(100vw - 80px);
     height: 100%;
-    background-color: blue;
 }
 
 #jumbo{
-    border: 1px solid black;
-    height: 40%;
+    height: 280px;
 }
 
 
 
 /* ***** MEDIA QUERY *****  */
-/* desktop min 992px***  */
+/* mobile max 767px *** */
+@media screen and (max-width: 767px){
+    #jumbo div{
+        height: calc(100% / 3);
+    }
+}
+/* tablet min 768px ***/
+@media screen and (min-width: 768px){
+    /* main  */
+    #jumbo{
+        height: 160px;
+    }
+}
+
+/* desktop min 992px ***/
 @media screen and (min-width: 992px){
     /* header  */
     #logo-container{
-        width: 180px;
+        width: 160px;
+    }
+
+    /* main  */
+    #jumbo{
+        height: 140px;
     }
 
     /* aisde  */
     aside{
-        width: 180px;
+        width: 160px;
     }
 }
