@@ -5,11 +5,18 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style-type: none;
+}
+
+.debug{
+    border: 1px solid red;
+}
+
 /* * HEADER * */
 header{
     height: 80px;
 }
-
 
 #logo-container{
     width: 80px;
@@ -19,11 +26,6 @@ header{
     background-color: rgb(234, 234, 234);
 }
 
-#searchbar i{
-    font-size: 1.25rem;
-    margin-right: .5rem;
-}
-
 #searchbar input[type="search"]{
     width: 100%;
     background-color: rgb(234, 234, 234);
@@ -31,13 +33,21 @@ header{
     border: none;
 }
 
-.dropdown i{
-    color: rgb(255,143,0);
+#navbar{
+    position: relative;
+    left: 1.5rem;
+}
+
+#bell{
     font-size: 1.25rem;
 }
 
-.debug{
-    border: 1px solid red;
+#navbar ul a{
+    color: rgb(91,88,88);
+}
+
+header #navbar .fa-bell{
+    color: rgb(255,143,0);
 }
 /* ** * MAIN * ** */
 main{
@@ -66,3 +76,9 @@ aside{
 
 
 /* ***** MEDIA QUERY *****  */
+/* desktop min 992px***  */
+@media screen and (min-width: 992px){
+    #logo-container{
+        width: 180px;
+    }
+}

@@ -10,23 +10,27 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
+        <!-- HEADER  -->
         <header class="d-flex align-items-center bg-light">
             <div id="header-container" class="container-fluid h-75 bg-white">
                 <div class="row justify-content-between w-100 h-100 align-items-center">
-                    <div class="col-2">
+                    <!-- logo  -->
+                    <div class="col flex-grow-0">
                         <div id="logo-container">
                             <img class="w-75 d-lg-none" src="./img/mobile-logo.png" alt="logo">
-                            <img class="d-none d-lg-block" src="./img/logo.svg" alt="logo">
+                            <img class="d-none d-lg-block w-100" src="./img/logo.svg" alt="logo">
                         </div>
                     </div>
+                    <!-- searchbar  -->
                     <div id="searchbar" class="col d-flex align-items-center flex-grow-1 h-75 rounded-3">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass me-2 btn p-0"></i>
                         <input type="search" name="search" placeholder="Prova a cercare: lezioni di Lavarel"> 
                     </div>
+                    <!-- navbar di destra  -->
                     <div id="navbar" class="col flex-grow-0 d-flex align-items-center h-75">
-                        <div class="dropdown">
+                        <div class="dropdown d-lg-none">
                             <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-bell"></i>
+                                <i id="bell" class="fa-solid fa-bell"></i>
                             </a>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Profilo</a></li>
@@ -34,6 +38,29 @@
                               <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </div>
+                        <ul class="d-none d-lg-flex my-0 gx-1 w-100 p-0">
+                            <li>
+                                <a href="#"><i class="fa-solid fa-list-ul text"></i></a>
+                            </li>
+                            <li class="mx-3">
+                                <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-bell"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
