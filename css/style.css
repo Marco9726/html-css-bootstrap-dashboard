@@ -27,10 +27,17 @@ header{
 #searchbar input[type="search"]{
     width: 100%;
     background-color: rgb(234, 234, 234);
+    outline: none;
+    border: none;
 }
 
-header .row *{
-    border: 1px solid black;
+.dropdown i{
+    color: rgb(255,143,0);
+    font-size: 1.25rem;
+}
+
+.debug{
+    border: 1px solid red;
 }
 /* ** * MAIN * ** */
 main{
