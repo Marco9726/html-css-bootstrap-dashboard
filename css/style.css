@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul{
@@ -17,11 +18,11 @@ ul{
 header{
     height: 80px;
 }
-
+/* logo  */
 #logo-container{
     width: 80px;
 }
-
+/* searchbar  */
 #searchbar{
     background-color: rgb(234, 234, 234);
 }
@@ -32,14 +33,10 @@ header{
     outline: none;
     border: none;
 }
-
+/* navbar */
 #navbar{
     position: relative;
     left: 1.5rem;
-}
-
-#bell{
-    font-size: 1.25rem;
 }
 
 #navbar ul a{
@@ -61,6 +58,11 @@ aside{
     height: 100%;
 }
 
+aside ul i{
+    width: 30px;
+}
+
+
 /* * main content *  */
 #main-content{
     width: calc(100vw - 80px);
@@ -78,7 +80,13 @@ aside{
 /* ***** MEDIA QUERY *****  */
 /* desktop min 992px***  */
 @media screen and (min-width: 992px){
+    /* header  */
     #logo-container{
+        width: 180px;
+    }
+
+    /* aisde  */
+    aside{
         width: 180px;
     }
 }
