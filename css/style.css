@@ -8,18 +8,30 @@
 /* * HEADER * */
 header{
     height: 80px;
-    background-color: rgb(245,245,245);
 }
 
-#header-container{
-    height: 75%;
-    background-color: aqua;
-}
 
 #logo-container{
     width: 80px;
 }
 
+#searchbar{
+    background-color: rgb(234, 234, 234);
+}
+
+#searchbar i{
+    font-size: 1.25rem;
+    margin-right: .5rem;
+}
+
+#searchbar input[type="search"]{
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+}
+
+header .row *{
+    border: 1px solid black;
+}
 /* ** * MAIN * ** */
 main{
     height: calc(100vh - 80px);
