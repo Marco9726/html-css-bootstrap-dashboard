@@ -70,7 +70,6 @@ aside ul i{
 
 /* * main content *  */
 
-
 #jumbo{
     height: 250px;
 }
@@ -107,6 +106,10 @@ table img{
 table .pill{
     font-size: .75rem;
     padding: .15rem .3rem;
+}
+
+#lg-right .card-body ul{
+    border: 1px solid lightgray;
 }
 /* ***** MEDIA QUERY *****  */
 /* mobile max 767px *** */
