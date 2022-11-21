@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
@@ -120,10 +121,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- SEZIONO A TABELLE  -->
-                <div id="sections" class="d-lg-flex h100">
+                <!-- SEZIONI A TABELLE  -->
+                <div id="sections" class="d-lg-flex py-4 px-2 h100 bg-light">
                     <!-- prima section  -->
-                    <section id="lg-left" class="debug py-4 px-2 h-100">
+                    <section id="lg-left" class="me-4 h-100">
                         <!-- tabella grande  -->
                         <div class="card mb-4">
                             <div class="card-header">
@@ -133,7 +134,7 @@
                                 <table class="table">
                                     <tbody class="text-center">
                                        <tr>
-                                        <th scope="col" class="col-4 col-md-5 col-<span class="pill text-white bg-success rounded-3">done </span> text-start">Nome</th>
+                                        <th scope="col" class="col-4 col-md-5 col-6 text-start">Nome</th>
                                         <th scope="col" class="col d-none d-md-table-cell">Data inizio</th>
                                         <th scope="col" class="col d-none d-md-table-cell">ROI</th>
                                         <th scope="col">Stato</th>
@@ -306,7 +307,41 @@
                           
                     </section>
                     <!-- seconda section  -->
-                    <section id="lg-right" class="debug"></section>       
+                    <section id="lg-right">
+                        <!-- chechboxs  -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                              <h2>Todo</h2>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush rounded-3">
+                                  <li class="list-group-item"><input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">Kick off nuove classi</li>
+                                  <li class="list-group-item"><input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">Lezione su Bootstrap 5 in classe #75</li>
+                                  <li class="list-group-item"><input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">Controllare usurname Github studenti</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- tabella stats  -->
+                        <div id="stats" class="card">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush rounded-3">
+                                    <li class="list-group-item">
+                                        <img src="./img/stats.jpeg" class="card-img-top" alt="stats">
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                    </li>
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                    <li>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Visualizza report approfondito</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>       
                 </div>
                 
 
