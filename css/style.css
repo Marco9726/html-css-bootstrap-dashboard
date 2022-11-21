@@ -58,14 +58,20 @@ aside{
     width: 70px;
     height: 100%;
     float: left;
-}
-
-aside ul{
-    padding-left: 1.5rem;
+    padding-right: 1rem;
 }
 
 aside ul i{
     width: 30px;
+}
+
+aside ul li:hover{
+    background-color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}
+
+aside ul li{
+    padding: .5rem 0rem;
 }
 
 /* * main content *  */
@@ -78,6 +84,11 @@ aside ul i{
     background-color: rgba(0,0,0,0.2);
     padding: .25rem .5rem;
     font-size: .9rem;
+}
+
+#jumbo .rounded-pill:hover{
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 
 #jumbo .fa-plus{
@@ -103,6 +114,10 @@ aside ul i{
 #lg-left,
 #lg-right{
     width: 100%;
+}
+
+#lg-left table tr:hover{
+    background-color: rgb(239, 239, 239);
 }
 
 th{
